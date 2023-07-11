@@ -11,6 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&family=Ubuntu:wght@300;400;500&display=swap"
           rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dynamicStyles.css">
+
+    <script src="./js/script.js" defer></script>
+
 </head>
 <body>
 
@@ -27,10 +36,10 @@
 
     <section class="result-box result-box-default" id="result">
         <h2 id="status">Adivinhe o número sorteado</h2>
-        <span id="attempt">Tentativas: 0</span>
+        <span>Tentativas: <span id="attempt">0</span></span>
     </section>
 
-    <button id="btnRestart">Jogar de novo</button>
+    <button id="btn-restart" onclick="restartGame()">Jogar de novo</button>
 
 </main>
 
